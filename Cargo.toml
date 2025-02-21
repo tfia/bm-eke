@@ -1,0 +1,24 @@
+[package]
+name = "bm"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ruohe Du <drh23@mails.tsinghua.edu.cn>"]
+
+[[bin]]
+name = "client"
+path = "src/bin/client.rs"
+
+[[bin]]
+name = "server"
+path = "src/bin/server.rs"
+
+[dependencies]
+anyhow = "1.0.95"
+clap = { version = "4.5.30", features = ["derive"] }
+env_logger = "0.11.6"
+hkdf = "0.12.4"
+log = "0.4.25"
+rand = "0.8.5"
+rsa = "0.9.7"
+sha2 = "0.10.8"
+zuc = "0.4.1"
