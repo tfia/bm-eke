@@ -1,7 +1,7 @@
 # bm-eke
 
-This repo is a demo implementation of the Bellovin-Merritt key exchange protocol,
-which is one of the labs in Tsinghua University's "Cybersecurity Fundamentals" course.
+This repo contains a demo implementation of the Bellovin-Merritt key exchange protocol,
+which is one of the labs in Tsinghua University's *Cybersecurity Fundamentals* course.
 
 ## build
 
@@ -39,3 +39,7 @@ Options:
 `--pw` is the pre-shared password. Server and client must use the same password.
 
 Run the server first, then run the client.
+
+## details
+
+I use RSA-2048 as the public key algorithm $E$, and ZUC-128 for the symmetric key algorithm $E_0$ and $E_1$.
